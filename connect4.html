@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect Four Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Connect Four</h1>
+  <div id="login" class="login">
+    <form id="loginForm">
+      <input type="text" id="playerRed" placeholder="Player Red Name" required />
+      <input type="text" id="playerYellow" placeholder="Player Yellow Name" required />
+      <button type="submit">Start Game</button>
+    </form>
+  </div>
+  <div class="board" id="board" style="display:none;"></div>
+  <div class="status" id="status" style="display:none;">Player Red's turn</div>
+  <button class="start-again" onclick="startAgain()" style="display:none;">Start Again</button>
+  <script src="app.js"></script>
+</body>
+</html>
